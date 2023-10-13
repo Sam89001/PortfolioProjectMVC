@@ -57,8 +57,11 @@ body {
 
 /* Project Section */
 
+project-section {
+    max-width: 800px
+}
+
 .row-formatting {
-    margin-bottom: 20px;
 }
 
 .project-image-size {
@@ -67,6 +70,7 @@ body {
 
 .project-text-section-size{
     min-width: 300px;
+    max-width: 600px
 }
 
 .project-titles {
