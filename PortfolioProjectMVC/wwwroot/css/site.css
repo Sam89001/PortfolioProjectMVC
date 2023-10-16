@@ -52,16 +52,17 @@ body {
 }
 
 .skills-square-icons {
-    max-width: 60px
+    max-width: 60px;
 }
 
 /* Project Section */
 
 project-section {
-    max-width: 800px
+    max-width: 800px;
 }
 
 .row-formatting {
+    row-gap: 20px;
 }
 
 .project-image-size {
@@ -70,9 +71,16 @@ project-section {
 
 .project-text-section-size{
     min-width: 300px;
-    max-width: 600px
+    max-width: 600px;
 }
 
 .project-titles {
-    margin-bottom: 20px
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .col-md-1_5 {
+        flex: 0 0 12.5%;
+        max-width: 12.5%;
+    }
 }
