@@ -28,7 +28,7 @@ body {
 .section-width {
     max-width: 85%;
     min-width: 250px;
-    padding: 20px
+    padding: 10px
 
 }
 
@@ -41,21 +41,22 @@ body {
 /* Knowledge Section */
 
 .knowledge-box {
-    max-width: 475px;
-    min-width: 250px;
-    
+    margin-bottom: 20px;
 }
 
-.skills-square {
-    padding: 10px;
-    background-color: white;
+@media (min-width: 768px) {
+    .custom-gap {
+        margin-right: 20px; /* Adjust the gap size as needed */
+    }
 }
 
-.skills-square-icons {
-    max-width: 60px;
-}
 
 /* Project Section */
+
+.margin-remover {
+    margin-left: 0px;
+    margin-right: 0px;
+}
 
 project-section {
     max-width: 800px;
@@ -70,7 +71,7 @@ project-section {
 }
 
 .project-text-section-size{
-    min-width: 300px;
+    min-width: 200px;
     max-width: 600px;
 }
 
