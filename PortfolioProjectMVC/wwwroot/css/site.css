@@ -17,6 +17,17 @@ body {
   margin-bottom: 60px;
 }
 
+/* base colors for the webpage */
+
+:root {
+  --blue: rgb(146,199,237);
+  --grey: rgb(128, 128, 128)
+}
+
+.text-color {
+    color: white
+}
+
 /* Layout Formatting*/
 
 .navbar-styles {
@@ -106,6 +117,7 @@ project-section {
 
 .project-titles {
     margin-bottom: 20px;
+    color: var(--grey)
 }
 
 @media (min-width: 768px) {
