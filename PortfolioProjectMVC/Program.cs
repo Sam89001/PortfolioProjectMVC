@@ -1,3 +1,8 @@
+using GoogleReCaptcha.V3;
+using GoogleReCaptcha.V3.Interface;
+using PortfolioProjectMVC.Models;
+using Microsoft.Extensions.DependencyInjection;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.

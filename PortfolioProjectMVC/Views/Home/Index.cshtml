@@ -1,6 +1,10 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+@section scripts {
+    <partial name="_CaptchaScripts"></partial>
+}
+@inject Microsoft.Extensions.Configuration.IConfiguration Configuration
 
 <!-- Primary area that I will be writing my HTML -->
 <div class="full-screen-div" style="background-color: lightblue; min-height: 100vh; padding-top: 75px;">
@@ -390,17 +394,23 @@
         <h3 class="section-headers" style="color: var(--blue)">Contact</h3>
     </div>
 
+    
+
     <div class="container section-width d-flex justify-content-center align-items-center" style="background-color: white;  padding: 40px">
 
         <div class="row">
 
             <div class="col-md-6" style="max-width: 100%; background-color: red;">
                 <div style="background-color: lightgray; min-height: 300px; ">
-                    <form method="post" asp-action="SendEmail" >
+                    <form id="sendEmailForm" method="post" asp-action="SendEmail" >    
                         <input name="Name" placeholder="Name"/>
                         <input name="Email" placeholder="Email" />
                         <textarea name="Query"></textarea>
-                        <input type="submit" placeholder="Query" value="Send Email"/>
+                        <input class="g-recaptcha"
+                               data-sitekey="@Configuration["GoogleReCaptcha:SiteKey"]"
+                               data-callback='onSubmit'
+                               data-action='submit'
+                            type="submit" placeholder="Query" value="Send Email"/>
                     </form>
                 </div>
             </div>
@@ -415,3 +425,7 @@
 
     </div>
 </div>
+
+
+
+

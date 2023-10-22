@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Net.Mail;
 using System.Net;
 using Microsoft.Extensions.Configuration;
+using GoogleReCaptcha.V3.Interface;
 
 namespace PortfolioProjectMVC.Controllers
 {
@@ -11,6 +12,7 @@ namespace PortfolioProjectMVC.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly IConfiguration _configuration;
+        private readonly ICaptchaValidator _captchaValidator;
 
         public HomeController(ILogger<HomeController> logger, IConfiguration configuration)
         {
@@ -23,17 +25,14 @@ namespace PortfolioProjectMVC.Controllers
             return View();
         }
 
-
-
         [HttpPost]
-        public IActionResult SendEmail(ContactForm contactForm)
+        public IActionResult SendEmail (ContactForm contactForm)
         {
             var smtpServer = _configuration["EmailSettings:SmtpServer"];
             var password = _configuration["EmailSettings:Password"];
 
             try
             {
-                //test note
 
                 var smtpClient = new SmtpClient(smtpServer)
                 {
