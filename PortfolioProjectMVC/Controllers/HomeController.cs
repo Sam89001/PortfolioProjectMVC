@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Net.Mail;
 using System.Net;
 using Microsoft.Extensions.Configuration;
-using GoogleReCaptcha.V3.Interface;
+
 
 namespace PortfolioProjectMVC.Controllers
 {
@@ -12,7 +12,6 @@ namespace PortfolioProjectMVC.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly IConfiguration _configuration;
-        private readonly ICaptchaValidator _captchaValidator;
 
         public HomeController(ILogger<HomeController> logger, IConfiguration configuration)
         {
