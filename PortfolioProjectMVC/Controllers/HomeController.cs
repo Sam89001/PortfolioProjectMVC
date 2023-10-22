@@ -33,7 +33,7 @@ namespace PortfolioProjectMVC.Controllers
 
             try
             {
-                
+                //test note
 
                 var smtpClient = new SmtpClient(smtpServer)
                 {
