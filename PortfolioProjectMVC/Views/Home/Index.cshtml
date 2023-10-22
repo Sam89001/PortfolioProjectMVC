@@ -409,11 +409,11 @@
 
             <div class="col-md-6">
                 <div style="background-color: lightgray; min-height: 300px; max-width: 500px; margin-left: auto">
-                    <form>
-                        <input name="Name"/>
-                        <input name="Email" />
+                    <form method="post" asp-action="SendEmail" >
+                        <input name="Name" placeholder="Name"/>
+                        <input name="Email" placeholder="Email" />
                         <textarea name="Query"></textarea>
-                        <input type="submit"/>
+                        <input type="submit" placeholder="Query" value="Send Email" />
                     </form>
 
                 </div>
