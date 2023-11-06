@@ -156,9 +156,15 @@
                 <div class="row row-formatting">
 
                     <div class="col-md-6 margin-remover">
-                            <div class="project-image-size">
-                                <img class="img-fluid" src="/Assets/images/Placeholders/amogus.jpg">
-                            </div>
+
+                        <div class="project-image-size top-image" id="project-images">
+                            <img class="img-fluid image-styles rotate-top" src="/Assets/images/Placeholders/amogus.jpg" id="top-image">
+                        </div>
+
+                        <div class="project-image-size bottom-image" id="project-images">
+                            <img class="img-fluid image-styles rotate-bottom" src="/Assets/images/Placeholders/pepe.jpg" id="bottom-image">
+                        </div>
+                        
                     </div>
 
                     <div class="col-md-6 margin-remover">
@@ -227,7 +233,13 @@
 
                     <div class="col-md-6 order-1 order-md-2 margin-remover">
                         <div class="project-image-size" style="margin-left: auto">
-                            <img class="img-fluid" src="/Assets/images/Placeholders/amogus.jpg">
+                            <div class="project-image-size" style="z-index: 2">
+                                <img class="img-fluid image-styles" src="/Assets/images/Placeholders/amogus.jpg">
+                            </div>
+
+                            <div class="project-image-size" style="z-index: 1;">
+                                <img class="img-fluid image-styles" src="/Assets/images/Placeholders/pepe.jpg">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -235,11 +247,17 @@
 
             <div style="margin-bottom: 80px;">
                 <div class="row row-formatting">
-                
+
                     <div class="col-md-6 margin-remover">
-                        <div class="project-image-size">
-                            <img class="img-fluid" src="/Assets/images/Placeholders/amogus.jpg">
+
+                        <div class="project-image-size top-image" id="project-images">
+                            <img class="img-fluid image-styles rotate-top" src="/Assets/images/Placeholders/amogus.jpg" id="top-image">
                         </div>
+
+                        <div class="project-image-size bottom-image" id="project-images">
+                            <img class="img-fluid image-styles rotate-bottom" src="/Assets/images/Placeholders/pepe.jpg" id="bottom-image">
+                        </div>
+
                     </div>
 
                     <div class="col-md-6 margin-remover">
@@ -291,7 +309,7 @@
         <h3 class="section-headers">About Me</h3>
     </div>
 
-    <div class="container section-width d-flex justify-content-center align-items-center" style="background-color: var(--blue); padding: 40px">
+    <div class="container-fluid section-width d-flex justify-content-center align-items-center" style="background-color: var(--blue); padding: 20px;">
 
         <div class="row" style="margin-bottom: 40px;">
 
@@ -312,7 +330,7 @@
             </div>
 
             <div class="col-md-6" style="padding-right: 10px;">
-                <div class="row" style="background-color: red; min-height: 300px; max-width: 500px; margin-left: auto;">
+                <div class="row" style="background-color: red; min-height: 300px; max-width: 500px; margin-left: auto; margin-right: 0px;">
 
                     <div class="col-12" style="background-color: lightgray; margin-bottom: 15px;">
                         <div class="row">
@@ -389,40 +407,36 @@
 <!-- Contact Section -->
 
 <div style="width: 100%; background-color: lightgreen;">
-
+    
     <div class="container section-width align-items-center text-lg-left" style="background-color: white;">
         <h3 class="section-headers" style="color: var(--blue)">Contact</h3>
     </div>
-
     
-
-    <div class="container section-width d-flex justify-content-center align-items-center" style="background-color: white;  padding: 40px">
-
+    <div class="container-fluid section-width d-flex justify-content-center align-items-center" style="background-color: white; padding: 40px;">
         <div class="row">
-
-            <div class="col-md-6" style="max-width: 100%; background-color: red;">
-                <div style="background-color: lightgray; min-height: 300px; ">
-                    <form id="sendEmailForm" method="post" asp-action="SendEmail" >    
-                        <input name="Name" placeholder="Name"/>
+           
+            <div class="col-md-6" style="background-color: red;">
+                <div style="background-color: lightgray; min-height: 300px;">
+                    <form id="sendEmailForm" method="post" asp-action="SendEmail">
+                        <input name="Name" placeholder="Name" />
                         <input name="Email" placeholder="Email" />
                         <textarea name="Query"></textarea>
                         <input class="g-recaptcha"
                                data-sitekey="@Configuration["GoogleReCaptcha:SiteKey"]"
                                data-callback='onSubmit'
                                data-action='submit'
-                            type="submit" placeholder="Query" value="Send Email"/>
+                               type="submit" placeholder="Query" value="Send Email" />
                     </form>
                 </div>
             </div>
-
-            <div class="col-md-6 " style="background-color: red; max-width: 100%;">
-              <div class="d-flex">
-                <img src="/Assets/images/SVGs/SC.svg" class="img-fluid" alt="Responsive Image" style="max-height: 300px;" />
-              </div>
+            
+            <div class="col-md-6" style="background-color: red;">
+                <div class="d-flex">
+                    <img src="/Assets/images/SVGs/SC.svg" class="img-fluid" alt="Responsive Image" style="max-height: 200px;" />
+                </div>
             </div>
-
+        
         </div>
-
     </div>
 </div>
 

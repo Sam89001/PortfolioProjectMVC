@@ -31,6 +31,7 @@ body {
 /* Layout Formatting*/
 
 .navbar-styles {
+    z-index: 3;
     box-shadow: 0px 5px 15px 10px rgba(0,0,0,0.1);
     min-height: 75px;
     position: fixed;
@@ -65,18 +66,39 @@ body {
     }
 }
 
+
 /* Site Formatting */
-.section-width {
-    max-width: 85%;
-    min-width: 250px;
-    padding: 10px
+
+@media (min-width: 1550px) {
+    .section-width {
+        max-width: 85%;
+        min-width: 250px;
+        padding: 10px
+    }
+
+    .section-headers {
+        padding: 10px;
+        font-size: 90px;
+        margin: 0px;
+        margin-bottom: 70px
+    }
 }
 
-.section-headers {
-    padding: 10px;
-    font-size: 50px;
-    margin: 0px;
+@media (max-width: 1549px) {
+    .section-width {
+        max-width: 95%;
+        min-width: 250px;
+        padding: 10px
+    }
+
+    .section-headers {
+        padding: 10px;
+        font-size: 70px;
+        margin: 0px;
+        margin-bottom: 40px;
+    }
 }
+
 
 /* Knowledge Section */
 
@@ -98,17 +120,42 @@ body {
     margin-right: 0px;
 }
 
-project-section {
-    max-width: 800px;
-}
-
 .row-formatting {
     row-gap: 20px;
 }
 
+/* image css*/
+
+.project-image-size:hover {
+    cursor: pointer;
+}
+
 .project-image-size {
+    position: relative;
     max-width: 600px;
 }
+
+.top-image {
+    z-index: 2;
+}
+
+.bottom-image {
+    z-index: 1;
+    top: -250px;
+    left: 25px;
+}
+
+.image-styles {
+    border-radius: 20px;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.4);
+}
+
+.project-image-size .rotate-top,
+.project-image-size .rotate-bottom {
+    transition: transform 0.3s ease-in-out;
+}
+
+/*text css*/
 
 .project-text-section-size{
     min-width: 200px;
