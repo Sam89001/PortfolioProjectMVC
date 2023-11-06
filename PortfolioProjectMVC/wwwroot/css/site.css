@@ -38,8 +38,8 @@ body {
     width: 100%;
 }
 
-@media (max-width: 479px) {
-    .title-for-hiding {
+@media (max-width: 850px) {
+    .d-flex.title-for-hiding {
         display: none;
         visibility: hidden
     }
@@ -69,9 +69,9 @@ body {
 
 /* Site Formatting */
 
-@media (min-width: 1550px) {
+@media (min-width: 1620px) {
     .section-width {
-        max-width: 85%;
+        max-width: 1600px;
         min-width: 250px;
         padding: 10px
     }
@@ -84,7 +84,7 @@ body {
     }
 }
 
-@media (max-width: 1549px) {
+@media (max-width: 1619px) {
     .section-width {
         max-width: 95%;
         min-width: 250px;
@@ -130,20 +130,97 @@ body {
     cursor: pointer;
 }
 
-.project-image-size {
-    position: relative;
-    max-width: 600px;
+@media (min-width: 1401px) {
+    .project-image-size {
+        position: relative;
+        max-width: 600px;
+    }
+
+    .bottom-image {
+        z-index: 1;
+        top: -250px;
+        left: 25px;
+        margin-right: 30px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .project-image-size {
+        position: relative;
+        max-width: 500px;
+    }
+
+    .bottom-image {
+        z-index: 1;
+        top: -250px;
+        left: 25px;
+        margin-right: 30px;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .project-image-size {
+        position: relative;
+        max-width: 450px;
+    }
+
+    .bottom-image {
+        z-index: 1;
+        top: -150px;
+        left: 25px;
+        margin-right: 30px;
+    }
+}
+
+
+@media (max-width: 1150px) {
+    .project-image-size {
+        position: relative;
+        max-width: 400px;
+    }
+
+    .bottom-image {
+        z-index: 1;
+        top: -150px;
+        left: 25px;
+        margin-right: 30px;
+    }
+}
+
+@media (max-width: 990px) {
+
+    .project-image-size {
+        position: relative;
+        max-width: 350px;
+    }
+
+    .bottom-image {
+        z-index: 1;
+        top: -50px;
+        left: 0px;
+        margin-right: 0px;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .project-image-size {
+        position: relative;
+        max-width: 700px;
+    }
+
+    .bottom-image {
+        display: none;
+        visibility: hidden;
+    }
 }
 
 .top-image {
     z-index: 2;
 }
 
-.bottom-image {
-    z-index: 1;
-    top: -250px;
-    left: 25px;
-}
 
 .image-styles {
     border-radius: 20px;
@@ -157,9 +234,20 @@ body {
 
 /*text css*/
 
-.project-text-section-size{
-    min-width: 200px;
-    max-width: 600px;
+@media (min-width: 701px) {
+    
+
+    .project-text-section-size {
+        min-width: 200px;
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 700px) {
+    .project-text-section-size {
+        min-width: 200px;
+        max-width: 600px;
+    }
 }
 
 .project-titles {
