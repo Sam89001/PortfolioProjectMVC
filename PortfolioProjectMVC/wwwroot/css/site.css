@@ -84,6 +84,26 @@ body {
     }
 }
 
+@media (max-width: 800px) {
+
+    .section-headers {
+        padding: 10px;
+        font-size: 60px;
+        margin: 0px;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .section-headers {
+        padding: 10px;
+        font-size: 50px;
+        margin: 0px;
+        margin-bottom: 40px;
+    }
+}
+
 
 /* Knowledge Section */
 
