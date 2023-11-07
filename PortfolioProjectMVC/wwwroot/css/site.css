@@ -33,8 +33,7 @@ body {
 .navbar-styles {
     z-index: 3;
     box-shadow: 0px 5px 15px 10px rgba(0,0,0,0.1);
-    min-height: 75px;
-    max-height: 75px;
+    height: 75px;
     position: fixed;
     width: 100%;
 }
@@ -42,7 +41,6 @@ body {
 
 .navbar-formatting {
     max-width: 1600px;
-    min-width: 580px; /* This needs to change here */
 }
 
 
