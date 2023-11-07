@@ -8,24 +8,30 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/PortfolioProjectMVC.styles.css" asp-append-version="true" />
 </head>
+
 <body>
+
     <header>
 
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white navbar-styles">
 
-            <div class="d-flex navbar-logo-layout" >
-                <img src="/Assets/images/SVGs/SC.svg" style="height: 35px; padding: 0px;">
-                <div class="d-flex">
+            <div class="d-flex container navbar-formatting" style="justify-content: space-between;">
+
+                <div class="d-flex navbar-logo-layout align-items-center">
+                    <img src="/Assets/images/SVGs/SC.svg" style="height: 35px; padding: 0px;">
                     <a class="font-weight-bold" style="font-size: 25px; color: var(--blue)" asp-area="" asp-controller="Home" asp-action="Index">Samuel Cole</a>
                 </div>
-                <div class="d-flex title-for-hiding" style="font-size: 25px; color: var(--grey)">Front-End Developer</div>
-            </div>
 
-            <div class="navbar-logo-layout" >
-                <img src="/Assets/images/icons8-github-500.svg" alt="GitHub" width="75" style="height: 35px; padding: 0px;">
-                <img src="/Assets/images/icons8-linkedin-512.svg" alt="LinkedIn" width="75" style="height: 35px; padding: 0px;">
+
+                <div class="d-flex title-for-hiding" style="font-size: 25px; color: var(--grey)">Front-End Developer</div>
+
+                <div class="d-flex" >
+                    <img src="/Assets/images/icons8-github-500.svg" alt="GitHub" width="75" style="height: 35px; padding: 0px;">
+                    <img src="/Assets/images/icons8-linkedin-512.svg" alt="LinkedIn" width="75" style="height: 35px; padding: 0px;">
+                </div>
+            
             </div>
-                   
+        
         </nav>
 
     </header>
