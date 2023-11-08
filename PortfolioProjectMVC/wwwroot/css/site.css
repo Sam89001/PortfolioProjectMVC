@@ -107,19 +107,45 @@ body {
 
 /* Knowledge Section */
 
-.knowledge-box {
+.knowledge-box-container {
     margin-bottom: 20px;
 }
 
 .knowledge-block {
-    background-color: green;
     margin: 10px;
     padding: 10px;
+    padding-bottom: 60px;
+}
+
+@media (min-width: 768px) {
+
+    .bottom-border {
+        border-bottom: solid 0px lightgray;
+    }
+
+    .middle-border {
+        border-left: solid 1px lightgray;
+        border-right: solid 1px lightgray;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .bottom-border {
+        border-bottom: solid 1px lightgray;
+    }
+
+    .middle-border {
+        border-left: solid 0px lightgray;
+        border-right: solid 0px lightgray;
+    }
 }
 
 
-/* Project Section */
 
+
+
+/* Project Section */
 .margin-remover {
     margin-left: 0px;
     margin-right: 0px;
