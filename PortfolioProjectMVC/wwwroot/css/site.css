@@ -111,10 +111,10 @@ body {
     margin-bottom: 20px;
 }
 
-@media (min-width: 768px) {
-    .custom-gap {
-        margin-right: 20px; /* Adjust the gap size as needed */
-    }
+.knowledge-block {
+    background-color: green;
+    margin: 10px;
+    padding: 10px;
 }
 
 
@@ -313,6 +313,7 @@ body {
 }
 
 .button-styles {
+    max-height: 100px;
     background-color: white;
     margin-bottom: 15px;
 }
