@@ -378,3 +378,26 @@ body {
         align-items: center;
     }
 }
+
+/* Contact Section */
+
+.field,
+.message { 
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+
+.message {
+    height: 300px;
+    resize: none;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.button {
+    padding: 10px;
+    background-color: var(--blue);
+    color: white;
+}
