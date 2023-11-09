@@ -100,6 +100,224 @@ body {
     }
 }
 
+/* Splash Page*/
+
+
+
+.center-images-formatting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.center-text-formatting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.skills-title {
+    color: dodgerblue;
+    font-weight: 700;
+}
+
+.skill {
+    color: var(--grey);
+}
+
+@media(min-width: 1400px) {
+    .left-side-custom-image {
+        min-height: 400px;
+        max-height: 450px;
+    }
+
+    .skills-title,
+    .skill {
+        font-size: 42px
+    }
+
+    .custom-image {
+        max-height: 150px;
+    }
+
+    .small-displays {
+        max-height: 175px;
+    }
+
+    .medium-displays {
+        max-height: 200px;
+    }
+
+    .large-displays {
+        max-height: 400px;
+        min-height: 350px;
+    }
+
+    .center-images-formatting {
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width: 1399px) {
+    .left-side-custom-image {
+        min-height: 400px;
+        max-height: 450px;
+    }
+
+    .skills-title,
+    .skill {
+        font-size: 30px
+    }
+
+    .custom-image {
+        max-height: 75px;
+    }
+
+    .small-displays {
+        max-height: 175px;
+    }
+
+    .medium-displays {
+        max-height: 200px;
+    }
+
+    .large-displays {
+        min-height: 200px;
+        max-height: 215px;
+    }
+
+    .center-images-formatting {
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width: 800px) {
+    .left-side-custom-image {
+        min-height: 300px;
+        max-height: 350px;
+    }
+
+    .center-text-formatting {
+        margin: 7px;
+    }
+
+    .skills-title,
+    .skill {
+        font-size: 35px
+    }
+
+    .custom-image {
+        max-height: 75px;
+    }
+
+    .small-displays {
+        max-height: 175px;
+    }
+
+    .medium-displays {
+        max-height: 200px;
+    }
+
+    .large-displays {
+        min-height: 200px;
+        max-height: 215px;
+    }
+
+    .center-images-formatting {
+        margin-bottom: 20px;
+    }
+
+}
+
+@media(max-width: 600px) {
+    .left-side-custom-image {
+        min-height: 200px;
+        max-height: 250px;
+    }
+
+    .center-text-formatting {
+        margin: 5px;
+    }
+
+    .skills-title,
+    .skill {
+        font-size: 20px
+    }
+
+    .custom-image {
+        max-height: 75px;
+    }
+
+    .small-displays {
+        max-height: 175px;
+    }
+
+    .medium-displays {
+        max-height: 200px;
+    }
+
+    .large-displays {
+        min-height: 200px;
+        max-height: 215px;
+    }
+
+    .center-images-formatting {
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width: 350px) {
+    .left-side-custom-image {
+        min-height: 150px;
+        max-height: 200px;
+    }
+
+    .center-text-formatting {
+        margin: 3px;
+    }
+
+    .skills-title,
+    .skill {
+        font-size: 15px
+    }
+
+    .custom-image {
+        max-height: 75px;
+    }
+
+    .small-displays {
+        max-height: 175px;
+    }
+
+    .medium-displays {
+        max-height: 200px;
+    }
+
+    .large-displays {
+        min-height: 150px;
+        max-height: 215px;
+    }
+
+    .center-images-formatting {
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width: 250px) {
+
+    .center-text-formatting {
+        margin: 2px;
+    }
+
+    .skills-title,
+    .skill {
+        font-size: 11px
+    }
+
+}
+
 
 /* Knowledge Section */
 
