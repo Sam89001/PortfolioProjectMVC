@@ -458,13 +458,14 @@
 
                         <form id="sendEmailForm" method="post" asp-action="SendEmail">
 
-                            <input class="field" name="Name" placeholder="Name" required />
-                            <input class="field" name=" Email" placeholder="Email" type="email" required />
+                            <input class="field" id="nameInput" name="Name" placeholder="Name" required />
+
+                            <input class="field" id="emailInput" name="Email" placeholder="Email" type="email" required/>
                             
-                            <textarea class="message" placeholder="Enquiry" name="Query" required></textarea>
+                            <textarea class="message" id="queryInput" placeholder="Enquiry" name="Query"></textarea>
 
                             <div class="d-flex" style="width: 100%;">
-                                <input class="checkbox" type="checkbox" name="mailing-list" id="mailing-list" required />
+                                <input class="checkbox" type="checkbox" name="mailing-list" id="checkboxInput" required />
                                 <label class="checkbox-text" for="mailing-list" >Tick this box to confirm you consent to be added to a mailing list.</label>
                             </div>
 
@@ -474,6 +475,7 @@
                                        data-sitekey="@Configuration["GoogleReCaptcha:SiteKey"]"
                                        data-callback='onSubmit'
                                        data-action='submit'
+                                       onclick="validateEmail()"
                                        type="submit" placeholder="Query" value="Send Email" />
 
                                 

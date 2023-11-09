@@ -55,9 +55,11 @@ namespace PortfolioProjectMVC.Controllers
 
                 return RedirectToAction("Index"); 
             }
+
             catch (Exception ex)
             {
                 _logger.LogError($"Error: {ex.Message}");
+                Console.WriteLine("Issue Sending");
                 return RedirectToAction("Index"); 
             }
         }
