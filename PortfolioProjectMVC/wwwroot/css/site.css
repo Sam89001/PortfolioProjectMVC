@@ -62,8 +62,10 @@ body {
     }
 
     .section-headers {
-        padding: 10px;
         font-size: 90px;
+        font-weight: 600;
+
+        padding: 10px;
         margin: 0px;
         margin-bottom: 70px
     }
@@ -77,9 +79,7 @@ body {
     }
 
     .section-headers {
-        padding: 10px;
         font-size: 70px;
-        margin: 0px;
         margin-bottom: 40px;
     }
 }
@@ -87,9 +87,7 @@ body {
 @media (max-width: 800px) {
 
     .section-headers {
-        padding: 10px;
         font-size: 60px;
-        margin: 0px;
         margin-bottom: 40px;
     }
 }
@@ -97,9 +95,7 @@ body {
 @media (max-width: 500px) {
 
     .section-headers {
-        padding: 10px;
         font-size: 50px;
-        margin: 0px;
         margin-bottom: 40px;
     }
 }
@@ -231,25 +227,12 @@ body {
 
 }
 
-@media (max-width: 1150px) {
-    .project-image-size {
-        position: relative;
-        max-width: 400px;
-    }
 
-    .bottom-image {
-        z-index: 1;
-        top: -150px;
-        left: 25px;
-        margin-right: 30px;
-    }
-}
-
-@media (max-width: 990px) {
+@media (max-width: 1100px) {
 
     .project-image-size {
         position: relative;
-        max-width: 350px;
+        max-width: 300px;
     }
 
     .bottom-image {
@@ -381,13 +364,14 @@ body {
 
 /* Contact Section */
 
+
+
 .field,
-.message { 
+.message {
     width: 100%;
     margin-bottom: 20px;
     padding: 10px;
 }
-
 
 .message {
     height: 300px;
@@ -396,8 +380,46 @@ body {
     overflow-y: auto;
 }
 
+.checkbox {
+    transform: scale(1.5);
+    margin: 5px 10px 90px 3px;
+    padding: 10px;
+}
+
+.checkbox-text {
+    color: var(--grey);
+    font-size: 18px;
+    flex-wrap: wrap;
+}
+
 .button {
+    height: 50px;
     padding: 10px;
     background-color: var(--blue);
     color: white;
+    border: none;
+}
+
+.contact-logo-formatting {
+    justify-content: space-between
+}
+
+/* Default styles for col-md-6 */
+.custom-col {
+    padding: 40px;
+}
+
+/* Media query to change to col-12 when screen width is less than 1300px */
+@media (max-width: 1100px) {
+    .custom-col {
+        padding: 40px;
+    }
+
+    /* Override col-md-6 with col-12 */
+    .custom-col.custom-col-md-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    /* Additional styles for col-12 if needed */
 }
