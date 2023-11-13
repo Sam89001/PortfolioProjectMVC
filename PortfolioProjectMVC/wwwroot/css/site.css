@@ -470,11 +470,16 @@ body {
 .knowledge-area-title {
     color: white;
     font-weight: 700;
+    padding-bottom: 30px;
+}
+
+.knowledge-text-block {
+    font-size: 18px;
     padding-bottom: 20px;
+    min-height: 210px;
 }
 
 @media (min-width: 768px) {
-
     .bottom-border {
         border-bottom: solid 0px lightgray;
     }
