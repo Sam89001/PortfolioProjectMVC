@@ -473,10 +473,45 @@ body {
     padding-bottom: 30px;
 }
 
-.knowledge-text-block {
-    font-size: 18px;
-    padding-bottom: 20px;
-    min-height: 210px;
+
+@media (min-width: 1600px) {
+    .knowledge-text-block {
+        font-size: 18px;
+        padding-bottom: 20px;
+        min-height: 210px;
+    }
+}
+
+@media (max-width: 1599px) {
+    .knowledge-text-block {
+        font-size: 18px;
+        padding-bottom: 20px;
+        min-height: 250px;
+    }
+}
+
+@media (max-width: 1350px) {
+    .knowledge-text-block {
+        font-size: 16px;
+        padding-bottom: 20px;
+        min-height: 300px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .knowledge-text-block {
+        font-size: 14px;
+        padding-bottom: 20px;
+        min-height: 300px;
+    }
+}
+
+@media (max-width: 900px) {
+    .knowledge-text-block {
+        font-size: 14px;
+        padding-bottom: 20px;
+        min-height: 400px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -500,10 +535,13 @@ body {
         border-left: solid 0px lightgray;
         border-right: solid 0px lightgray;
     }
+
+    .knowledge-text-block {
+        font-size: 20px;
+        padding-bottom: 20px;
+        min-height: 0px;
+    }
 }
-
-
-
 
 
 /* Project Section */
