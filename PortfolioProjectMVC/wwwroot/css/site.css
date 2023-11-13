@@ -129,7 +129,30 @@ body {
 
 /* Media Queries */
 
-@media(min-width: 1400px) {
+@media(min-width: 1801px) {
+
+    .name-title {
+        font-size: 150px;
+    }
+
+    .profession-title {
+        font-size: 130px;
+    }
+}
+
+@media(max-width: 1800px) {
+
+    .name-title {
+        font-size: 125px;
+    }
+
+    .profession-title {
+        font-size: 105px;
+    }
+
+}
+
+@media(min-width: 1451px) {
     .left-side-custom-image {
         min-height: 300px;
         max-height: 350px;
@@ -165,9 +188,12 @@ body {
         padding-left: 5px; 
         padding-right: 5px; 
     }
+
+    
 }
 
-@media(max-width: 1399px) {
+@media(max-width: 1450px) {
+
     .left-side-custom-image {
         min-height: 300px;
         max-height: 350px;
@@ -203,7 +229,47 @@ body {
         padding-left: 5px;
         padding-right: 5px;
     }
+
+    .name-title {
+        font-size: 100px;
+    }
+
+    .profession-title {
+        font-size: 80px;
+    }
 }
+
+@media(max-width: 1200px) {
+
+    .name-title {
+        font-size: 85px;
+    }
+
+    .profession-title {
+        font-size: 65px;
+    }
+
+    .skills-title,
+    .skill {
+        font-size: 25px
+    }
+}
+@media(max-width: 1000px) {
+    .name-title {
+        font-size: 75px;
+    }
+
+    .profession-title {
+        font-size: 55px;
+    }
+
+    .skills-title,
+    .skill {
+        font-size: 20px
+    }
+
+}
+
 
 @media(max-width: 800px) {
     .left-side-custom-image {
@@ -213,12 +279,7 @@ body {
 
     .center-text-formatting {
         margin: 7px;
-    }
-
-    .skills-title,
-    .skill {
-        font-size: 35px
-    }
+    } 
 
     .custom-image {
         max-height: 75px;
@@ -245,9 +306,23 @@ body {
         padding-left: 5px;
         padding-right: 5px;
     }
+
+    .name-title {
+        font-size: 65px;
+    }
+
+    .profession-title {
+        font-size: 45px;
+    }
+
+    .skills-title,
+    .skill {
+        font-size: 15px
+    }
+
 }
 
-@media(max-width: 600px) {
+@media(max-width: 650px) {
     .left-side-custom-image {
         min-height: 100px;
         max-height: 150px;
@@ -287,9 +362,56 @@ body {
         padding-left: 5px;
         padding-right: 5px;
     }
+
+    .name-title {
+        font-size: 55px;
+    }
+
+    .profession-title {
+        font-size: 35px;
+    }
+
+    .skills-title,
+    .skill {
+        font-size: 15px
+    }
 }
 
-@media(max-width: 350px) {
+
+
+@media(max-width: 574px) {
+
+    .name-title {
+        font-size: 65px;
+    }
+
+    .profession-title {
+        font-size: 45px;
+    }
+
+    .skills-title,
+    .skill {
+        font-size: 20px
+    }
+}
+
+@media(max-width: 480px) {
+
+    .name-title {
+        font-size: 55px;
+    }
+
+    .profession-title {
+        font-size: 35px;
+    }
+
+    .skills-title,
+    .skill {
+        font-size: 17px
+    }
+}
+
+@media(max-width: 380px) {
     .left-side-custom-image {
         min-height: 50px;
         max-height: 100px;
@@ -297,11 +419,6 @@ body {
 
     .center-text-formatting {
         margin: 3px;
-    }
-
-    .skills-title,
-    .skill {
-        font-size: 15px
     }
 
     .custom-image {
@@ -329,17 +446,27 @@ body {
         padding-left: 5px;
         padding-right: 5px;
     }
+
+    .name-title {
+        font-size: 45px;
+    }
+
+    .profession-title {
+        font-size: 25px;
+    }
+
+    .skills-title,
+    .skill {
+        font-size: 12px
+    }
+}
+
 }
 
 @media(max-width: 250px) {
 
     .center-text-formatting {
         margin: 2px;
-    }
-
-    .skills-title,
-    .skill {
-        font-size: 11px
     }
 
     .random-padding {
@@ -410,7 +537,7 @@ body {
 
 @keyframes textSlide {
     0% {
-        transform: translateX(500px)
+        transform: translateX(700px)
     }
 
     100% {
@@ -418,15 +545,18 @@ body {
     }
 }
 
-@keyframes initialPosition {
+@keyframes textSlideTitles {
     0% {
-        transform: translateX(-500px);
+        transform: translateX(-700px)
     }
 
     100% {
-        transform: translateX(0px);
+        transform: translateX(0px)
     }
 }
+
+
+
 
 
 /* Knowledge Section */
