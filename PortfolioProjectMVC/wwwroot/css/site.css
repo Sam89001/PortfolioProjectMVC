@@ -134,7 +134,26 @@ body {
     opacity: 0.3;
 }
 
+.text-position {
+    z-index: 2;
+    position: absolute;
+}
+
 /* Media Queries */
+
+@media(min-width: 2401px) {
+    .text-position {
+        top: 100px;
+        left: 40px;
+    }
+}
+
+@media(max-width: 2400px) {
+    .text-position {
+        top: 0px;
+        left: 40px;
+    }
+}
 
 @media(min-width: 1801px) {
 
