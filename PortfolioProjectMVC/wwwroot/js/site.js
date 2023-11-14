@@ -2,6 +2,7 @@
 // for details on configuring this project to bundle and minify static web assets.
 
 
+/*
 
 projectImages = document.getElementById("project-images");
 topImage = document.getElementById("top-image");
@@ -20,3 +21,10 @@ projectImages.addEventListener('mouseleave', function () {
     bottomImage.style.transform = 'rotate(0deg)'; // Reset to original position
 });
 
+*/
+
+projectImages = document.getElementById("project-images"); 
+
+projectImages.addEventListener('mouseenter', function (event) {
+    event.target.classList.toggle('hovered');
+});
