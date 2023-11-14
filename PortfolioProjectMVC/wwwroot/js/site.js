@@ -23,7 +23,8 @@ projectImages.addEventListener('mouseleave', function () {
 
 */
 
-var topImages = document.querySelectorAll('.project-image-size');
+var topImages = document.querySelectorAll('.left-side');
+var rightTopImages = document.querySelectorAll('.right-side');
 
 topImages.forEach(function (topImage) {
 
@@ -37,6 +38,10 @@ topImages.forEach(function (topImage) {
         event.target.nextElementSibling.querySelector('img.img-fluid.image-styles.rotate-bottom').classList.toggle('hovered');
     });
 
+});
+
+rightTopImages.addEventListener('mouseenter', function (event) {
+    console.log("working")
 });
 
 function loadPopUp() {

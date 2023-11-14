@@ -28,3 +28,18 @@
 }
 
 
+.right-rotate-top,
+.right-rotate-bottom {
+    transform-origin: bottom right;
+}
+
+.right-rotate-top#rightTopImage.hovered {
+    transform: rotate(-10deg);
+}
+
+.right-rotate-bottom#leftTopimage.hovered {
+    transform: rotate(10deg);
+}
+
+
+
