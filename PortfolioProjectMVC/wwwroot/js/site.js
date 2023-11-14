@@ -23,8 +23,23 @@ projectImages.addEventListener('mouseleave', function () {
 
 */
 
-projectImages = document.getElementById("project-images"); 
+var topImages = document.querySelectorAll('.project-image-size');
 
-projectImages.addEventListener('mouseenter', function (event) {
-    event.target.classList.toggle('hovered');
+topImages.forEach(function (topImage) {
+
+    topImage.addEventListener('mouseenter', function (event) {
+        event.target.querySelector('img.img-fluid.image-styles.rotate-top').classList.toggle('hovered');
+        event.target.nextElementSibling.querySelector('img.img-fluid.image-styles.rotate-bottom').classList.toggle('hovered');
+    });
+
+    topImage.addEventListener('mouseleave', function (event) {
+        event.target.querySelector('img.img-fluid.image-styles.rotate-top').classList.toggle('hovered');
+        event.target.nextElementSibling.querySelector('img.img-fluid.image-styles.rotate-bottom').classList.toggle('hovered');
+    });
+
 });
+
+function loadPopUp() {
+    var popUpBox = document.getElementById("popupBox")
+    popUpBox.classList.toggle('active')
+}

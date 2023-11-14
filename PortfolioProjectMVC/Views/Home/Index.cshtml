@@ -8,19 +8,16 @@
 
 <!-- Primary area that I will be writing my HTML -->
 
-<!-- 
+
 
 <div class="popup-box" id="popupBox">
 
 </div>
 
- -->
 
+<div class="splash-page-formatting container-fluid">
 
-
-<div style="background-color: white; padding-top: 100px;">
-
-    <div style="z-index: 2; position: absolute; top: 100px; left: 40px;">
+    <div class="section-width" style="z-index: 2; position: absolute; top: 100px; left: 40px;">
         <h1 class="font-weight-bold name-title splash-titles" style="animation: textSlideTitles 1.8s;">Samuel Cole</h1>
         <h2 class="font-weight-bold profession-title splash-titles" style="animation: textSlideTitles 3s;">Front End Developer</h2>
 
@@ -326,11 +323,11 @@
 
                     <div class="section col-md-6 margin-remover">   
 
-                            <div class="project-image-size top-image" id="project-images">
+                            <div class="project-image-size top-image" id="project-images" onclick="loadPopUp()">
                                 <img class="img-fluid image-styles rotate-top" src="/Assets/images/Placeholders/amogus.jpg" id="topImage">
                             </div>
 
-                            <div class="project-image-size bottom-image" id="project-images">
+                            <div class="project-image-size bottom-image" id="project-images" onclick="loadPopUp()">
                                 <img class="img-fluid image-styles rotate-bottom" src="/Assets/images/Placeholders/pepe.jpg" id="bottomImage">
                             </div>
                         
@@ -418,25 +415,25 @@
                 </div>
            </div>
 
-            <div class="project-block-formatting" >
+            <div class="project-block-formatting" style=" border-bottom: 2px solid var(--blue);">
                 <div class="row row-formatting">
 
                     <div class="section col-md-6 margin-remover">
 
-                        <div class="project-image-size top-image" id="project-images">
-                            <img class="img-fluid image-styles rotate-top" src="/Assets/images/Placeholders/amogus.jpg" id="top-image">
+                        <div class="project-image-size top-image" id="project-images" onclick="loadPopUp()">
+                            <img class="img-fluid image-styles rotate-top" src="/Assets/images/Placeholders/amogus.jpg" id="topImage">
                         </div>
 
-                        <div class="project-image-size bottom-image" id="project-images">
-                            <img class="img-fluid image-styles rotate-bottom" src="/Assets/images/Placeholders/pepe.jpg" id="bottom-image">
+                        <div class="project-image-size bottom-image" id="project-images" onclick="loadPopUp()">
+                            <img class="img-fluid image-styles rotate-bottom" src="/Assets/images/Placeholders/pepe.jpg" id="bottomImage">
                         </div>
 
                     </div>
 
                     <div class="section col-md-6 margin-remover">
-                        <div class=" project-text-section-size" style="background-color: white; margin-left: auto">
+                        <div class="project-text-section-size" style="background-color: white; margin-left: auto">
                             <div class="project-titles">
-                                <h1 class="h1 project-titles">Project Title</h1>
+                                <h1 class="h1 project-titles">My Portfolio Website</h1>
                                 <p class="project-text">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -445,26 +442,25 @@
                                 </p>
                             </div>
                             <h1 class="h1 technology-titles">Technology</h1>
-                                <div class="row">
-                                    <div class="col-3 col-md-1_5">
-                                        <img src="/Assets/images/SVGs/java.svg" class="img-fluid" alt="Responsive Image" />
-                                    </div>
-                                    <div class="col-3 col-md-1_5">
-                                        <img src="/Assets/images/SVGs/java.svg" class="img-fluid" alt="Responsive Image" />
-                                    </div>
-                                    <div class="col-3 col-md-1_5">
-                                        <img src="/Assets/images/SVGs/java.svg" class="img-fluid" alt="Responsive Image" />
-                                    </div>
-                                    <div class="col-3 col-md-1_5">
-                                        <img src="/Assets/images/SVGs/java.svg" class="img-fluid" alt="Responsive Image" />
-                                    </div>
+
+                            <div class="row">
+                                <div class="col-2 col-md-1_5">
+                                    <img src="/Assets/images/SVGs/java.svg" class="img-fluid" alt="Responsive Image" />
                                 </div>
+                                <div class="col-2 col-md-1_5">
+                                    <img src="/Assets/images/SVGs/java.svg" class="img-fluid" alt="Responsive Image" />
+                                </div>
+                                <div class="col-2 col-md-1_5">
+                                    <img src="/Assets/images/SVGs/java.svg" class="img-fluid" alt="Responsive Image" />
+                                </div>
+                                <div class="col-2 col-md-1_5">
+                                    <img src="/Assets/images/SVGs/java.svg" class="img-fluid" alt="Responsive Image" />
+                                </div>
+                            </div>
                         </div>
                     </div>
-           
                 </div>
-        
-           </div>
+            </div>
 
         </div>
     

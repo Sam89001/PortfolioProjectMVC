@@ -19,10 +19,12 @@
     transform-origin: bottom left;
 }
 
-.rotate-top#topImage:hover {
+.rotate-top#topImage.hovered {
     transform: rotate(-10deg);
 }
 
-.rotate-bottom#bottomImage:hover {
+.rotate-bottom#bottomImage.hovered {
     transform: rotate(10deg);
 }
+
+
