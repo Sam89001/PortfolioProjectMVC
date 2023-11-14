@@ -86,3 +86,36 @@
         transform: translateX(0px)
     }
 }
+
+.project-image-size .rotate-top,
+.project-image-size .rotate-bottom,
+.project-image-size .right-rotate-top,
+.project-image-size .right-rotate-bottom {
+    transition: transform 0.3s ease-in-out;
+}
+
+.rotate-top,
+.rotate-bottom {
+    transform-origin: bottom left;
+}
+
+.right-rotate-top,
+.right-rotate-bottom {
+    transform-origin: bottom right;
+}
+
+.rotate-top.hovered {
+    transform: rotate(-10deg);
+}
+
+.rotate-bottom.hovered {
+    transform: rotate(10deg);
+}
+
+.right-rotate-top.hovered {
+    transform: rotate(10deg);
+}
+
+.right-rotate-bottom.hovered {
+    transform: rotate(-10deg);
+ }

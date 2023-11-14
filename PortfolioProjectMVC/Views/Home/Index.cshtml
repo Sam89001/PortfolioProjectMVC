@@ -11,9 +11,18 @@
 
 
 <div class="popup-box" id="popupBox">
+    <div style="position: relative;">
+        <div class="close-button" style="position: absolute; top: 0; right: 0; padding: 20px;">
+            <img class="img-flex cross" src="/Assets/images/SVGs/cross.svg" onclick="removePopUp()" />
+        </div>
+    </div>
 
+    <div class="container-fluid"></div>
+
+    <!-- probs rework this with grid, col-12 with flex height for first, then again and again. -->
 </div>
 
+<div class="blur-overlay" id="blur" onclick="removePopUp()"></div>
 
 <div class="splash-page-formatting container-fluid">
 
@@ -183,15 +192,15 @@
                                 <div class="col-lg-12">
 
                                     <div class="row">
-                                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                                        <div class="col-lg-2 col-md-2 col-sm-2 col-3">
                                             <img src="/Assets/images/SVGs/html5-grey.svg" class="img-fluid" alt="Responsive Image" />
                                         </div>
 
-                                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                                        <div class="col-lg-2 col-md-2 col-sm-2 col-3">
                                             <img src="/Assets/images/SVGs/css3-grey.svg" class="img-fluid" alt="Responsive Image" />
                                         </div>
 
-                                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                                        <div class="col-lg-2 col-md-2 col-sm-2 col-3">
                                             <img src="/Assets/images/SVGs/javascript-grey.svg" class="img-fluid" alt="Responsive Image" />
                                         </div>
                                     </div>
@@ -227,23 +236,23 @@
                                 <div class="col-lg-12">
 
                                     <div class="row">
-                                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                                        <div class="col-lg-2 col-md-2 col-sm-2 col-3">
                                             <img src="/Assets/images/SVGs/c-sharp-grey.svg" class="img-fluid" alt="Responsive Image" />
                                         </div>
 
-                                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                                        <div class="col-lg-2 col-md-2 col-sm-2 col-3">
                                             <img src="/Assets/images/SVGs/javascript-grey.svg" class="img-fluid" alt="Responsive Image" />
                                         </div>
 
-                                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                                        <div class="col-lg-2 col-md-2 col-sm-2 col-3">
                                             <img src="/Assets/images/SVGs/node-js-grey.svg" class="img-fluid" alt="Responsive Image" />
                                         </div>
 
-                                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                                        <div class="col-lg-2 col-md-2 col-sm-2 col-3">
                                             <img src="/Assets/images/SVGs/express-js-grey.svg" class="img-fluid" alt="Responsive Image" />
                                         </div>
 
-                                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                                        <div class="col-lg-2 col-md-2 col-sm-2 col-3">
                                             <img src="/Assets/images/SVGs/mongodb-grey.svg" class="img-fluid" alt="Responsive Image" />
                                         </div>
                                     </div>
@@ -280,19 +289,19 @@
                                 <div class="col-lg-12">
 
                                     <div class="row">
-                                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                                        <div class="col-lg-2 col-md-2 col-sm-2 col-3">
                                             <img src="/Assets/images/SVGs/dotnet-grey.svg" class="img-fluid" alt="Responsive Image" />
                                         </div>
 
-                                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                                        <div class="col-lg-2 col-md-2 col-sm-2 col-3">
                                             <img src="/Assets/images/SVGs/visual-studio-grey.svg" class="img-fluid" alt="Responsive Image" />
                                         </div>
 
-                                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                                        <div class="col-lg-2 col-md-2 col-sm-2 col-3">
                                             <img src="/Assets/images/SVGs/visual-studio-code-grey.svg" class="img-fluid" alt="Responsive Image" />
                                         </div>
 
-                                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                                        <div class="col-lg-2 col-md-2 col-sm-2 col-3">
                                             <img src="/Assets/images/SVGs/git-grey.svg" class="img-fluid" alt="Responsive Image" />
                                         </div>
                                     </div>
@@ -318,150 +327,211 @@
 
     <div class="container section-width" style="background-color: white;">
     
-        <div class="container-fluid">
+        <div class="container-fluid" style="padding-bottom: 20px;">
 
-            <div class="project-block-formatting project-block-margins" style=" border-bottom: 2px solid var(--blue);">
-                <div class="row row-formatting">
+            <div class="project-block-formatting project-block-margins project-border">
+                    <div class="row row-formatting">
 
-                    <div class="section col-md-6 margin-remover">   
+                        <div class="section col-md-6 margin-remover">
 
                             <div class="left-side project-image-size top-image" id="project-images" onclick="loadPopUp()">
                                 <img class="img-fluid image-styles rotate-top" src="/Assets/images/Placeholders/amogus.jpg" id="topImage">
                             </div>
 
-                            <div class="left-side project-image-size bottom-image" id="project-images" onclick="loadPopUp()">
+                            <div class="project-image-size bottom-image" id="project-images" onclick="loadPopUp()">
                                 <img class="img-fluid image-styles rotate-bottom" src="/Assets/images/Placeholders/pepe.jpg" id="bottomImage">
                             </div>
-                        
-                    </div>
 
-                    <div class="section col-md-6 margin-remover">
-                        <div class="project-text-section-size" style="background-color: white; margin-left: auto">
-                            <div class="project-titles">
-                                <h1 class="h1 project-titles">My Portfolio Website</h1>
-                                <p class="project-text">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                                </p>
-                            </div>
-                            <h1 class="h1 technology-titles">Technology</h1>
+                        </div>
 
-                                <div class="row">
-                                    <div class="col-2 col-md-1_5">
-                                        <img src="/Assets/images/SVGs/java.svg" class="img-fluid" alt="Responsive Image" />
-                                    </div>
-                                    <div class="col-2 col-md-1_5">
-                                        <img src="/Assets/images/SVGs/java.svg" class="img-fluid" alt="Responsive Image" />
-                                    </div>
-                                    <div class="col-2 col-md-1_5">
-                                        <img src="/Assets/images/SVGs/java.svg" class="img-fluid" alt="Responsive Image" />
-                                    </div>
-                                    <div class="col-2 col-md-1_5">
-                                        <img src="/Assets/images/SVGs/java.svg" class="img-fluid" alt="Responsive Image" />
-                                    </div>
+                        <div class="section col-md-6 margin-remover">
+                            <div class="project-text-section-size" style="background-color: white; margin-left: auto">
+                                <div >
+                                    <h1 class="h1 project-titles">My Portfolio Website</h1>
+                                    <p class="project-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                                    </p>
                                 </div>
+                                <h1 class="h1 technology-titles">Technology</h1>
+
+                                    <div class="row">
+
+                                        <div class="col-lg-1 col-md-1 col-2">
+                                            <img src="/Assets/images/SVGs/html5-grey.svg" class="img-fluid" alt="Responsive Image" />
+                                        </div>
+                                        <div class="col-lg-1 col-md-1 col-2">
+                                            <img src="/Assets/images/SVGs/javascript-grey.svg" class="img-fluid" alt="Responsive Image" />
+                                        </div>
+                                        <div class="col-lg-1 col-md-1 col-2">
+                                            <img src="/Assets/images/SVGs/css3-grey.svg" class="img-fluid" alt="Responsive Image" />
+                                        </div>
+                                        <div class="col-lg-1 col-md-1 col-2">
+                                            <img src="/Assets/images/SVGs/c-sharp-grey.svg" class="img-fluid" alt="Responsive Image" />
+                                        </div>
+
+                                    </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-           </div>
+               </div>
 
-            <div class="project-block-formatting project-block-margins" style="border-bottom: 2px solid var(--blue);">
-                <div class="row row-formatting" >
+            <div class="project-block-formatting project-block-margins project-border">
+                    <div class="row row-formatting" >
                 
-                    <div class="section col-md-6 order-2 order-md-1 margin-remover">
-                        <div class=" project-text-section-size" style="background-color: white;">
+                        <div class="section col-md-6 order-2 order-md-1 margin-remover">
+                            <div class=" project-text-section-size" style="background-color: white;">
 
-                            <div class="project-titles">
-                                <h1 class="h1 project-titles">Project Title</h1>
-                                <p class="project-text">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                                </p>
+                                <div>
+                                    <h1 class="h1 project-titles">Project Title</h1>
+                                    <p class="project-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                                    </p>
+                                </div>
+
+                                <h1 class="h1 technology-titles">Technology</h1>
+
+                                    <div class="row">
+
+                                        <div class="col-lg-1 col-md-1 col-2">
+                                            <img src="/Assets/images/SVGs/html5-grey.svg" class="img-fluid" alt="Responsive Image" />
+                                        </div>
+                                        <div class="col-lg-1 col-md-1 col-2">
+                                            <img src="/Assets/images/SVGs/javascript-grey.svg" class="img-fluid" alt="Responsive Image" />
+                                        </div>
+                                        <div class="col-lg-1 col-md-1 col-2">
+                                            <img src="/Assets/images/SVGs/css3-grey.svg" class="img-fluid" alt="Responsive Image" />
+                                        </div>
+                                        <div class="col-lg-1 col-md-1 col-2">
+                                            <img src="/Assets/images/SVGs/c-sharp-grey.svg" class="img-fluid" alt="Responsive Image" />
+                                        </div>
+                                
+                                    </div>
+                            </div>
+                        </div>
+
+                        <div class="section col-md-6 order-1 order-md-2 margin-remover">
+
+                            <div class="right-side project-image-size top-image" id="project-images" onclick="loadPopUp()">
+                                <img class="img-fluid image-styles right-rotate-top" src="/Assets/images/Placeholders/amogus.jpg" id="rigthTopImage">
                             </div>
 
-                            <h1 class="h1 technology-titles">Technology</h1>
-                                <div class="row">
-                                    <div class="col-3 col-md-1_5">
-                                        <img src="/Assets/images/SVGs/java.svg" class="img-fluid" alt="Responsive Image" />
-                                    </div>
-                                    <div class="col-3 col-md-1_5">
-                                        <img src="/Assets/images/SVGs/java.svg" class="img-fluid" alt="Responsive Image" />
-                                    </div>
-                                    <div class="col-3 col-md-1_5">
-                                        <img src="/Assets/images/SVGs/java.svg" class="img-fluid" alt="Responsive Image" />
-                                    </div>
-                                    <div class="col-3 col-md-1_5">
-                                        <img src="/Assets/images/SVGs/java.svg" class="img-fluid" alt="Responsive Image" />
-                                    </div>
-                                </div>
-                        </div>
-                    </div>
-
-                    <div class="section col-md-6 order-1 order-md-2 margin-remover">
-
-                        <div class="right-side project-image-size top-image" id="project-images" onclick="loadPopUp()">
-                            <img class="img-fluid image-styles right-rotate-top" src="/Assets/images/Placeholders/amogus.jpg" id="topImage">
-                        </div>
-
-                        <div class="right-side project-image-size bottom-image" id="project-images" onclick="loadPopUp()">
-                            <img class="img-fluid image-styles right-rotate-bottom" src="/Assets/images/Placeholders/pepe.jpg" id="bottomImage">
-                        </div>
+                            <div class="project-image-size bottom-image" id="project-images" onclick="loadPopUp()">
+                                <img class="img-fluid image-styles right-rotate-bottom" src="/Assets/images/Placeholders/pepe.jpg" id="rightBottomImage">
+                            </div>
                     
-                    </div>
+                        </div>
                 
-                </div>
-           </div>
+                    </div>
+               </div>
 
-            <div class="project-block-formatting" style=" border-bottom: 2px solid var(--blue);">
-                <div class="row row-formatting">
+            <div class="roject-block-formatting project-block-margins project-border">
+                    <div class="row row-formatting">
 
-                    <div class="section col-md-6 margin-remover">
+                        <div class="section col-md-6 margin-remover">
 
-                        <div class="left-side project-image-size top-image" id="project-images" onclick="loadPopUp()">
-                            <img class="img-fluid image-styles rotate-top" src="/Assets/images/Placeholders/amogus.jpg" id="topImage">
+                            <div class="left-side project-image-size top-image" id="project-images" onclick="loadPopUp()">
+                                <img class="img-fluid image-styles rotate-top" src="/Assets/images/Placeholders/amogus.jpg" id="topImage">
+                            </div>
+
+                            <div class="project-image-size bottom-image" id="project-images" onclick="loadPopUp()">
+                                <img class="img-fluid image-styles rotate-bottom" src="/Assets/images/Placeholders/pepe.jpg" id="bottomImage">
+                            </div>
+
                         </div>
 
-                        <div class="left-side project-image-size bottom-image" id="project-images" onclick="loadPopUp()">
-                            <img class="img-fluid image-styles rotate-bottom" src="/Assets/images/Placeholders/pepe.jpg" id="bottomImage">
+                        <div class="section col-md-6 margin-remover">
+                            <div class="project-text-section-size" style="background-color: white; margin-left: auto">
+                                <div>
+                                    <h1 class="h1 project-titles">My Portfolio Website</h1>
+                                    <p class="project-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                                    </p>
+                                </div>
+
+                                <h1 class="h1 technology-titles">Technology</h1>
+
+                                <div class="row">
+
+                                    <div class="col-lg-1 col-md-1 col-2">
+                                        <img src="/Assets/images/SVGs/html5-grey.svg" class="img-fluid" alt="Responsive Image" />
+                                    </div>
+                                    <div class="col-lg-1 col-md-1 col-2">
+                                        <img src="/Assets/images/SVGs/javascript-grey.svg" class="img-fluid" alt="Responsive Image" />
+                                    </div>
+                                    <div class="col-lg-1 col-md-1 col-2">
+                                        <img src="/Assets/images/SVGs/css3-grey.svg" class="img-fluid" alt="Responsive Image" />
+                                    </div>
+                                    <div class="col-lg-1 col-md-1 col-2">
+                                        <img src="/Assets/images/SVGs/c-sharp-grey.svg" class="img-fluid" alt="Responsive Image" />
+                                    </div>
+                                </div>
+                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="project-block-formatting project-block-margins">
+                    <div class="row row-formatting">
+
+                        <div class="section col-md-6 order-2 order-md-1 margin-remover">
+                            <div class=" project-text-section-size" style="background-color: white;">
+
+                                <div>
+                                    <h1 class="project-titles">Project Title</h1>
+                                    <p class="project-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                                    </p>
+                                </div>
+
+                                <h1 class="h1 technology-titles">Technology</h1>
+
+                                <div class="row">
+
+                                    <div class="col-lg-1 col-md-1 col-2">
+                                        <img src="/Assets/images/SVGs/html5-grey.svg" class="img-fluid" alt="Responsive Image" />
+                                    </div>
+                                    <div class="col-lg-1 col-md-1 col-2">
+                                        <img src="/Assets/images/SVGs/javascript-grey.svg" class="img-fluid" alt="Responsive Image" />
+                                    </div>
+                                    <div class="col-lg-1 col-md-1 col-2">
+                                        <img src="/Assets/images/SVGs/css3-grey.svg" class="img-fluid" alt="Responsive Image" />
+                                    </div>
+                                    <div class="col-lg-1 col-md-1 col-2">
+                                        <img src="/Assets/images/SVGs/c-sharp-grey.svg" class="img-fluid" alt="Responsive Image" />
+                                    </div>
+                           
+                                </div>
+                        
+                            </div>
+                        </div>
+
+                        <div class="section col-md-6 order-1 order-md-2 margin-remover">
+
+                            <div class="right-side project-image-size top-image" id="project-images" onclick="loadPopUp()">
+                                <img class="img-fluid image-styles right-rotate-top" src="/Assets/images/Placeholders/amogus.jpg" id="rigthTopImage">
+                            </div>
+
+                            <div class="project-image-size bottom-image" id="project-images" onclick="loadPopUp()">
+                                <img class="img-fluid image-styles right-rotate-bottom" src="/Assets/images/Placeholders/pepe.jpg" id="rightBottomImage">
+                            </div>
+
                         </div>
 
                     </div>
-
-                    <div class="section col-md-6 margin-remover">
-                        <div class="project-text-section-size" style="background-color: white; margin-left: auto">
-                            <div class="project-titles">
-                                <h1 class="h1 project-titles">My Portfolio Website</h1>
-                                <p class="project-text">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                                </p>
-                            </div>
-                            <h1 class="h1 technology-titles">Technology</h1>
-
-                            <div class="row">
-                                <div class="col-2 col-md-1_5">
-                                    <img src="/Assets/images/SVGs/java.svg" class="img-fluid" alt="Responsive Image" />
-                                </div>
-                                <div class="col-2 col-md-1_5">
-                                    <img src="/Assets/images/SVGs/java.svg" class="img-fluid" alt="Responsive Image" />
-                                </div>
-                                <div class="col-2 col-md-1_5">
-                                    <img src="/Assets/images/SVGs/java.svg" class="img-fluid" alt="Responsive Image" />
-                                </div>
-                                <div class="col-2 col-md-1_5">
-                                    <img src="/Assets/images/SVGs/java.svg" class="img-fluid" alt="Responsive Image" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-            </div>
 
         </div>
     

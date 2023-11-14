@@ -2,29 +2,10 @@
 // for details on configuring this project to bundle and minify static web assets.
 
 
-/*
-
-projectImages = document.getElementById("project-images");
-topImage = document.getElementById("top-image");
-bottomImage = document.getElementById("bottom-image");
-
-projectImages.addEventListener('mouseenter', function () {
-    topImage.style.transformOrigin = 'left bottom'; // Set the origin to the bottom left corner
-    topImage.style.transform = 'rotate(-10deg)';
-
-    bottomImage.style.transformOrigin = 'left bottom'; // Set the origin to the bottom left corner
-    bottomImage.style.transform = 'rotate(10deg)';
-});
-
-projectImages.addEventListener('mouseleave', function () {
-    topImage.style.transform = 'rotate(0deg)'; // Reset to original position
-    bottomImage.style.transform = 'rotate(0deg)'; // Reset to original position
-});
-
-*/
 
 var topImages = document.querySelectorAll('.left-side');
 var rightTopImages = document.querySelectorAll('.right-side');
+
 
 topImages.forEach(function (topImage) {
 
@@ -40,11 +21,38 @@ topImages.forEach(function (topImage) {
 
 });
 
-rightTopImages.addEventListener('mouseenter', function (event) {
-    console.log("working")
+rightTopImages.forEach(function (rightTopImage) {
+    rightTopImage.addEventListener('mouseenter', function (event) {
+        event.currentTarget.querySelector('.img-fluid.image-styles.right-rotate-top').classList.toggle('hovered');
+        event.currentTarget.nextElementSibling.querySelector('.img-fluid.image-styles.right-rotate-bottom').classList.toggle('hovered');
+    });
+
+    rightTopImage.addEventListener('mouseleave', function (event) {
+        event.currentTarget.querySelector('.img-fluid.image-styles.right-rotate-top').classList.toggle('hovered');
+        event.currentTarget.nextElementSibling.querySelector('.img-fluid.image-styles.right-rotate-bottom').classList.toggle('hovered');
+    });
 });
+
+
+
 
 function loadPopUp() {
     var popUpBox = document.getElementById("popupBox")
-    popUpBox.classList.toggle('active')
+    var blur = document.getElementById("blur")
+
+    popUpBox.classList.add('active')
+    blur.classList.add('active')
+
+    blur.addEventListener('click', function () {
+        blur.classList.remove('active');
+    });
 }
+
+function removePopUp() {
+    var popUpBox = document.getElementById("popupBox")
+    var blur = document.getElementById("blur")
+
+    popUpBox.classList.remove('active')
+    blur.classList.remove('active')
+}
+

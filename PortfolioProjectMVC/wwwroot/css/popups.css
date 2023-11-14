@@ -2,43 +2,50 @@
     visibility: hidden;
     position: fixed;
     z-index: 10;
-    background-color: black;
-    height: 800px;
-    width: 1000px;
+    background-color: var(--grey);
+    height: 200px;
+    width: 400px; 
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    transition: height 0.2s, width 0.2s ;
 }
 
-.popup-box#popupBox.active {
+.blur-overlay {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    z-index: 9;
+    pointer-events: none;
+}
+
+.popup-box.active {
+    height: 800px;
+    width: 1000px;
+    display: block;
     visibility: visible;
 }
 
-.rotate-top,
-.rotate-bottom {
-    transform-origin: bottom left;
+.blur-overlay.active {
+    display: block;
+    visibility: visible;
 }
 
-.rotate-top#topImage.hovered {
-    transform: rotate(-10deg);
+.cross {
+    min-width: 25px;
+    max-width: 75px;
+    width: 50px;
+    opacity: 0.6;
+    transition: opacity 0.1s ease-in
 }
 
-.rotate-bottom#bottomImage.hovered {
-    transform: rotate(10deg);
-}
-
-
-.right-rotate-top,
-.right-rotate-bottom {
-    transform-origin: bottom right;
-}
-
-.right-rotate-top#rightTopImage.hovered {
-    transform: rotate(-10deg);
-}
-
-.right-rotate-bottom#leftTopimage.hovered {
-    transform: rotate(10deg);
+.cross:hover {
+    cursor: pointer;
+    opacity: 0.3
 }
 
 
