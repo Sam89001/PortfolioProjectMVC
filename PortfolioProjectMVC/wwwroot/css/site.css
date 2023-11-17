@@ -1,5 +1,7 @@
 html {
-  font-size: 14px;
+    font-size: 14px;
+    position: relative;
+    min-height: 100%;
 }
 
 @media (min-width: 768px) {
@@ -8,13 +10,10 @@ html {
   }
 }
 
-html {
-  position: relative;
-  min-height: 100%;
-}
-
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 /* base colors for the webpage */
@@ -30,6 +29,8 @@ body {
 
 /* Layout Formatting*/
 
+
+
 .navbar-styles {
     z-index: 3;
     box-shadow: 0px 5px 15px 10px rgba(0,0,0,0.1);
@@ -44,15 +45,22 @@ body {
 }
 
 
-@media (max-width: 850px) {
-    .d-flex.title-for-hiding {
+
+
+/* Media query to hide elements on screens smaller than 1200px */
+@media (max-width: 1200px) {
+    .title-for-hiding {
         display: none;
-        visibility: hidden
+        visibility: hidden;
     }
 }
 
 
 /* Site Formatting */
+.universal-site-width {
+    width: 100%;
+}
+
 
 @media (min-width: 1620px) {
     .section-width {
@@ -84,6 +92,7 @@ body {
     }
 }
 
+
 @media (max-width: 800px) {
 
     .section-headers {
@@ -97,6 +106,31 @@ body {
     .section-headers {
         font-size: 50px;
         margin-bottom: 40px;
+    }
+}
+
+/* Custom grids */
+
+@media (min-width: 767px) and (max-width: 1300px) {
+    .col-2-md-custom {
+        flex: 0 0 auto;
+        width: 16.666667%;
+        max-width: 16.666667%;
+    }
+
+    .col-3-md-custom {
+        flex: 0 0 auto;
+        width: 25%;
+        max-width: 25%;
+    }
+
+}
+
+@media (max-width: 1050px) {
+    .col-12-md-custom {
+        flex: 0 0 auto;
+        width: 100%;
+        max-width: 100%;
     }
 }
 
@@ -490,18 +524,20 @@ body {
 /* Knowledge Section */
 
 .knowledge-box-container {
-    margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 .knowledge-block {
     margin: 10px;
-    padding: 10px;
+    padding: 10px 0px 10px 0px;
     padding-bottom: 60px;
 }
 
 .knowledge-area-title {
     color: white;
+    font-size: 35px;
     font-weight: 700;
+    padding-top: 30px;
     padding-bottom: 30px;
 }
 
@@ -512,6 +548,10 @@ body {
         padding-bottom: 20px;
         min-height: 210px;
     }
+
+    .knowledge-intro {
+        font-size: 30px;
+    }
 }
 
 @media (max-width: 1599px) {
@@ -520,6 +560,11 @@ body {
         padding-bottom: 20px;
         min-height: 250px;
     }
+
+    .knowledge-intro {
+        font-size: 28px;
+    }
+}
 }
 
 @media (max-width: 1350px) {
@@ -530,23 +575,7 @@ body {
     }
 }
 
-@media (max-width: 1050px) {
-    .knowledge-text-block {
-        font-size: 14px;
-        padding-bottom: 20px;
-        min-height: 300px;
-    }
-}
-
-@media (max-width: 900px) {
-    .knowledge-text-block {
-        font-size: 14px;
-        padding-bottom: 20px;
-        min-height: 400px;
-    }
-}
-
-@media (min-width: 768px) {
+@media (min-width: 1051px) {
     .bottom-border {
         border-bottom: solid 0px lightgray;
     }
@@ -557,7 +586,12 @@ body {
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1050px) {
+    .knowledge-text-block {
+        font-size: 25px;
+        padding-bottom: 50px;
+        min-height: 0px;
+    }
 
     .bottom-border {
         border-bottom: solid 1px lightgray;
@@ -568,11 +602,28 @@ body {
         border-right: solid 0px lightgray;
     }
 
+}
+
+@media (max-width: 767px) {
     .knowledge-text-block {
         font-size: 20px;
-        padding-bottom: 20px;
-        min-height: 0px;
     }
+
+    .knowledge-intro {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .knowledge-text-block {
+        font-size: 16px;
+    }
+
+    .knowledge-intro {
+        font-size: 18px;
+    }
+
 }
 
 
@@ -594,7 +645,6 @@ body {
 .project-border {
     border-bottom: 2px solid var(--blue);
 }
-
 
 
 @media (min-width: 1401px) {
@@ -727,6 +777,11 @@ body {
 }
 
 @media (max-width: 550px) {
+
+    .project-block-margins {
+        padding-bottom: 350px;
+    }
+
     .project-block-formatting {
         min-height: 700px;
     }
@@ -742,18 +797,28 @@ body {
 }
 
 @media (max-width: 425px) {
+    
+
     .project-block-formatting {
         min-height: 650px;
     }
 
     .project-text {
-        font-size: 18px;
+        font-size: 19px;
     }
 
     .project-titles,
     .technology-titles {
         font-size: 35px;
     }
+}
+
+@media (max-width: 350px) {
+
+    .project-text {
+        font-size: 18px;
+    }
+
 }
 
 /* image css*/
