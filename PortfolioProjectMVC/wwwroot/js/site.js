@@ -6,7 +6,6 @@
 var topImages = document.querySelectorAll('.left-side');
 var rightTopImages = document.querySelectorAll('.right-side');
 
-
 topImages.forEach(function (topImage) {
 
     topImage.addEventListener('mouseenter', function (event) {
@@ -34,7 +33,16 @@ rightTopImages.forEach(function (rightTopImage) {
 });
 
 
+function updateNumberOfProjects() {
+    var projectAmount = document.querySelectorAll('[class*="project-block-formatting"]');
+    var numberOfProjects = projectAmount.length 
 
+    document.getElementById('numberOfProjects').innerText = numberOfProjects;
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    updateNumberOfProjects();
+});
 
 function loadPopUp() {
     var popUpBox = document.getElementById("popupBox")
@@ -56,3 +64,5 @@ function removePopUp() {
     blur.classList.remove('active')
 }
 
+
+project - block - formatting
