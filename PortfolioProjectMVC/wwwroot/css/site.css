@@ -48,16 +48,6 @@ body {
 
 
 
-
-/* Media query to hide elements on screens smaller than 1200px */
-@media (max-width: 1200px) {
-    .title-for-hiding {
-        display: none;
-        visibility: hidden;
-    }
-}
-
-
 /* Site Formatting */
 .universal-site-width {
     width: 100%;
@@ -184,12 +174,17 @@ body {
     }
 
     .skills-title,
-    .skill {
+    .skill,
+    .projects-title {
         font-size: 42px
     }
 
     .profession-title {
-        font-size: 130px;
+        font-size: 120px;
+    }
+
+    .projects-title-number {
+        font-size: 60px;
     }
 
     .splash-page-formatting {
@@ -205,10 +200,14 @@ body {
     }
 
     .skills-title,
-    .skill {
+    .skill,
+    .projects-title {
         font-size: 42px
     }
 
+    .projects-title-number {
+        font-size: 50px;
+    }
 
     .profession-title {
         font-size: 105px;
@@ -309,7 +308,8 @@ body {
     }
 
     .skills-title,
-    .skill {
+    .skill,
+    .projects-title {
         font-size: 25px
     }
 
@@ -362,12 +362,13 @@ body {
     }
 
     .skills-title,
-    .skill {
+    .skill,
+    .projects-title {
         font-size: 30px
     }
 }
 
-@media(max-width: 650px) {
+@media(max-width: 660px) {
 
     .name-title {
         font-size: 95px;
@@ -432,6 +433,20 @@ body {
     .skill {
         font-size: 25px
     }
+
+    .projects-title-number {
+        font-size: 40px;
+    }
+
+    .center-12 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+       .center-images-formatting {
+        margin-bottom: 10px;
+    }
 }
 
 @media(max-width: 500px) {
@@ -489,10 +504,6 @@ body {
     .large-displays {
         min-height: 150px;
         max-height: 215px;
-    }
-
-    .center-images-formatting {
-        margin-bottom: 10px;
     }
 
 }
